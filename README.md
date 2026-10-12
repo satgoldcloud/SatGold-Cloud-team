@@ -30,6 +30,14 @@ SatGold Cloud is a multi-school management platform built with HTML, CSS, browse
 
 All static HTML pages use project-relative CSS, JavaScript and logo paths, so the public pages render from a local web server rooted at `public/` as well as on Vercel. To preview styling only, run a static server from `public/` (for example, `npx serve public`). For working API routes and auth, use `npm run dev` from the repository root with `.env.local`, then open the localhost URL Vercel prints. Opening authenticated pages with `file://` cannot provide API routes, Supabase Auth or form submissions.
 
+The included dependency-free preview server serves the frontend at `http://127.0.0.1:4173`:
+
+```sh
+npm run preview
+```
+
+This is a visual frontend preview. API calls, login and other Supabase-backed actions require `npm run dev` and Vercel CLI credentials.
+
 ## Production mode
 
 Vercel runs production deployments with `NODE_ENV=production`. Configure the production environment variables in the Vercel project settings, set `APP_URL` and `FRONTEND_URL` to the verified production domain, apply the Supabase migrations, and configure Auth redirect URLs and provider webhooks. Deploy from the linked repository with `npm run deploy:production` when the production configuration and credentials are ready. Local `npm run dev` remains development mode and uses local credentials.

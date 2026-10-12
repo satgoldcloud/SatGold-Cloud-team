@@ -5,6 +5,7 @@
   "type": "module",
   "description": "Multi-school management platform built with vanilla JavaScript, Vercel and Supabase",
   "scripts": {
+    "preview": "node scripts/preview.js",
     "dev": "vercel dev",
     "deploy:production": "vercel --prod"
   },
