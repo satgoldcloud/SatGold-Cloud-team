@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="robots" content="noindex,nofollow"><meta name="theme-color" content="#17324d">
+  <title>Workspace | SatGold Cloud</title><link rel="icon" href="assets/images/favicon.svg">
+  <link rel="stylesheet" href="assets/css/styles.css"><link rel="stylesheet" href="assets/css/portal.css">
+</head>
+<body class="portal-body">
+  <header class="site-header">
+    <a class="brand" href="/"><img src="satgold-cloud-logo.svg" alt="SatGold Cloud" width="205" height="54"></a>
+    <div class="header-user"><span id="user-name"></span><button id="sign-out" class="button button-small" type="button">Sign out</button></div>
+  </header>
+  <main class="workspace-main">
+    <div class="workspace-heading">
+      <div><p class="eyebrow">YOUR WORKSPACE</p><h1>Welcome, <span id="user-name-title">school community</span></h1><p id="dashboard-status" class="portal-intro" aria-live="polite">Loading your secure workspace...</p></div>
+      <div class="workspace-actions"><a id="manage-students" class="button" href="/students.html" hidden>Manage students <span aria-hidden="true">↗</span></a><a id="setup-link" class="button" href="/setup.html" hidden>School setup <span aria-hidden="true">↗</span></a><a class="button" href="/reports.html">Reports <span aria-hidden="true">↗</span></a><a id="billing-link" class="button" href="/billing.html" hidden>Plans and billing <span aria-hidden="true">↗</span></a><a id="assistant-link" class="button" href="/assistant.html" hidden>Staff assistant <span aria-hidden="true">↗</span></a><a id="platform-admin-link" class="button" href="/platform-admin.html" hidden>Platform controls <span aria-hidden="true">↗</span></a><a class="button" href="/register.html">Register another school <span aria-hidden="true">↗</span></a></div>
+    </div>
+    <section><h2>Your schools</h2><div id="school-list" class="school-list"></div></section>
+    <section class="next-step"><p class="eyebrow">SCHOOL MANAGEMENT</p><h2>Your workspace is being prepared.</h2><p>Student, staff, class, learning and reporting tools will appear here as your school administrator sets them up.</p></section>
+  </main>
+  <script type="module" src="assets/js/dashboard.js"></script>
+</body>
+</html>
